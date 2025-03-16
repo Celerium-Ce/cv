@@ -244,15 +244,10 @@ export default function Page() {
         {/* Profile section - image and name side by side */}
         <div className="flex items-center ml-22 mb-20 relative">
           {/* Profile Picture - keep this fixed */}
-          <Image
-            loader={imageLoader}
-            src="/static/pfp.png" 
+          <img
+            src="https://i.ibb.co/DgVrkTr5/Whats-App-Image-2025-03-14-at-15-41-53-95b8acab-1.png" 
             alt="Profile"
             className="w-45 h-70 rounded-lg object-cover"
-            width={180}
-            height={280}
-            unoptimized={true}
-            priority
           />
           
           {/* Name pushed further to the right */}
