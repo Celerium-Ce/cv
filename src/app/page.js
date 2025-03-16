@@ -3,6 +3,11 @@
 import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image'; // Add this import at the top
 
+// Use loader pattern for GitHub Pages
+const imageLoader = ({ src }) => {
+  return process.env.NODE_ENV === 'production' ? `/cv${src}` : src
+}
+
 export default function Page() {
   // Adding a log to see initial render
   console.log("Rendering Page component");
@@ -240,6 +245,7 @@ export default function Page() {
         <div className="flex items-center ml-22 mb-20 relative">
           {/* Profile Picture - keep this fixed */}
           <Image
+            loader={imageLoader}
             src="/static/pfp.png" 
             alt="Profile"
             className="w-45 h-70 rounded-lg object-cover"
