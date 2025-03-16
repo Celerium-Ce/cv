@@ -41,7 +41,7 @@ export default function Page() {
 
   useEffect(() => {
     generateStars(density, fadeThreshold, curveIntensity, galaxyPattern);
-  }, []);
+  }, [density, fadeThreshold, curveIntensity, galaxyPattern]);
 
   // Fix the mouse movement tracking useEffect
   useEffect(() => {
@@ -308,7 +308,7 @@ You can find my curriculum vitae <a href="https://drive.google.com/file/d/1">her
           {selectedButton === "Contact" && (
             <div>
               <h2 className="text-3xl mb-4">Contact Me</h2>
-              <p>Here's how you can get in touch with me.</p>
+              <p>Here&apos;s how you can get in touch with me.</p>
             </div>
           )}
         </div>
