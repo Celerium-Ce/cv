@@ -240,7 +240,7 @@ export default function Page() {
         <div className="flex items-center ml-22 mb-20 relative">
           {/* Profile Picture - keep this fixed */}
           <Image
-            src="/pfp.png" 
+            src="/static/pfp.png" 
             alt="Profile"
             className="w-45 h-70 rounded-lg object-cover"
             width={180}
