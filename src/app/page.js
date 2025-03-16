@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
+import Image from 'next/image'; // Add this import at the top
 
 export default function Page() {
   // Adding a log to see initial render
@@ -238,10 +239,13 @@ export default function Page() {
         {/* Profile section - image and name side by side */}
         <div className="flex items-center ml-22 mb-20 relative">
           {/* Profile Picture - keep this fixed */}
-          <img
+          <Image
             src="/pfp.png" 
             alt="Profile"
             className="w-45 h-70 rounded-lg object-cover"
+            width={180}
+            height={280}
+            priority
           />
           
           {/* Name pushed further to the right */}
