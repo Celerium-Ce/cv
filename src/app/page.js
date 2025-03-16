@@ -286,7 +286,7 @@ export default function Page() {
 Beyond academics, I have a creative side and love engaging with fictional arts, 3D modeling, and animation. I also enjoy playing tennis and traveling
 <br/>
 <br/>
-You can find my curriculum vitae <a href="https://drive.google.com/file/d/1">here</a>.
+You can find my curriculum vitae <a href="https://drive.google.com/file/d/1NQIL1RazZmD2SdZ-9C6Eq7ggY7H8e1uB/view?usp=sharing">here</a>.
               </p>
             </div>
           )}
@@ -314,10 +314,11 @@ You can find my curriculum vitae <a href="https://drive.google.com/file/d/1">her
         </div>
       </div>
       
-      {/* Debug display */}
+      {/* Debug display 
       <div className="absolute top-4 right-4 bg-black/50 p-2 text-white text-sm z-50">
         Selected: {selectedButton}
       </div>
+      */}
       
       {/* Star background */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
