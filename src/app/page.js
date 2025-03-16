@@ -245,6 +245,7 @@ export default function Page() {
             className="w-45 h-70 rounded-lg object-cover"
             width={180}
             height={280}
+            unoptimized={true}
             priority
           />
           
